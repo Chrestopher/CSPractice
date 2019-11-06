@@ -7,6 +7,9 @@ Figure out if a string is a valid palindrome
 def valid_palindrome(string):
     """
     Returns whether or not a string is a valid palindrome
+    Time Complexity: O(n/2)
+    Space Complexity: O(1)
+    n as # of characters in the string
     :param string: input string
     :return: Boolean
     """
@@ -23,6 +26,8 @@ def valid_palindrome(string):
             return True
         elif string[i] is not string[len(string) - 1 - i]:
             return False
+        elif string[i] is string[len(string) - 1 - i] and i is (len(string)-1-i):
+            return True
     return True
 
 

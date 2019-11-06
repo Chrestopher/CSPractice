@@ -9,6 +9,8 @@ Turn that string into a palindrome
 def palindrome_permutation(string):
     """
     Checks to see if the string could be rearranged into a palindrome
+    Space complexity: O(n)
+    Time complexity: O(n)
     :param string:
     :return: String
     """
@@ -31,6 +33,11 @@ def palindrome_permutation(string):
 
 
 def rearrange_palindrome(string):
+    """
+    Rearranges the string into a palindrome if it is able
+    :param string:
+    :return:
+    """
     letter_dict = {}
     for letter in string:
         if letter in letter_dict:

@@ -1,5 +1,20 @@
+"""
+Reversing a linked list
 
-def reverse_linked_list():
+"""
+
+
+class LinkedNode:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+
+
+def reverse_linked_list_recursive(node):
+    pass
+
+
+def reverse_linked_list_iterative(node):
     pass
 
 
